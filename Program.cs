@@ -8,30 +8,40 @@ namespace Assignment1
         {
 
             Console.WriteLine("Print Pattern");
-            int n = 9;  
+            int n = 6;
+            Console.WriteLine("Input: "+n);
             PrintPattern(n);//calling the recursive function to execute
             Console.WriteLine();
 
             Console.WriteLine("Print Series");
             int n2 = 7;
+            Console.WriteLine("Input: " + n2);
             PrintSeries(n2);           //calling the printseries function/method
             Console.WriteLine();
 
             Console.WriteLine("USF TIME - not case sensitive");
             string s = "09:15:35PM";
+            Console.WriteLine("Input: " + s);
             string t = UsfTime(s);          //calling the USFTime(string s) function to return output
             Console.WriteLine(t);
             Console.WriteLine();
 
             Console.WriteLine("USF Numbers");
-            int n3 = 115;//total integers
+            int n3 = 106;//total integers
             int k =8;//numbers per line
+            Console.WriteLine("Input: n3: " + n3+" k: "+ k);
             UsfNumbers(n3, k);
             Console.WriteLine();
 
-            Console.WriteLine("Palindromes");
             string[] words = new string[] { "abcd","dcba","lls","s","sssll"};
+            Console.Write("Input: {");
+            foreach (string w in  words)
+            {
+                Console.Write(w+"  ");
+            }
+            Console.WriteLine("}");
             //the first method uses a reverse method to find out the palindrome
+            Console.WriteLine("Palindromes");
             PalindromePairs(words);
             Console.WriteLine();
             //the second method uses the basic reading an array of alphabets that make a word forward and reverse check logic to find out a palindrome
@@ -41,6 +51,7 @@ namespace Assignment1
 
             Console.WriteLine("Stones");
             int n4 = 10;
+            Console.WriteLine("Input: " + n4);
             Stones(n4);
             Console.WriteLine();
 
